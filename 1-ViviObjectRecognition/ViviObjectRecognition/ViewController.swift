@@ -8,6 +8,7 @@
 import UIKit
 import CoreVideo
 import AVFoundation
+import CoreML
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,9 @@ class ViewController: UIViewController {
     // Used for rendering image processing results and performing image analysis. Here we use
     // it for rendering out scaled and cropped captured frames in preparation for our model.
     let context = CIContext()
+
+    // Inceptionv3()는 deprecated 됨
+    let model: Inceptionv3? = try? Inceptionv3(configuration: MLModelConfiguration())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,11 +44,32 @@ class ViewController: UIViewController {
 
 // MARK: - VideoCaptureDelegate
 
-extension ViewController : VideoCaptureDelegate{
+extension ViewController: VideoCaptureDelegate {
 
-    func onFrameCaptured(videoCapture: VideoCapture,
-                         pixelBuffer:CVPixelBuffer?,
-                         timestamp:CMTime){
+    func onFrameCaptured(
+        videoCapture: VideoCapture,
+        pixelBuffer: CVPixelBuffer?,
+        timestamp: CMTime
+    ) {
 
+        // Unwrap the parameter pixxelBuffer; exit early if nil
+        guard let pixelBuffer = pixelBuffer else {
+            return
+        }
+
+        // Prepare our image for our model (resizing)
+        guard let scaledPixelBuffer = CIImage(cvImageBuffer: pixelBuffer)
+                .resize(size: CGSize(width: 299, height: 299))
+                .toPixelBuffer(context: context) else {
+            return
+        }
+
+        // Try to make a prediction
+        let prediction = try? self.model?.prediction(image:scaledPixelBuffer)
+
+        // Update label
+        DispatchQueue.main.sync {
+            classifiedLabel.text = prediction?.classLabel ?? "Unknown"
+        }
     }
 }
