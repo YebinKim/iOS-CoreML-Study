@@ -139,7 +139,40 @@ extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     /**
      Called when a new video frame was written
+    */
+    public func captureOutput(
+        _ output: AVCaptureOutput,
+        didOutput sampleBuffer: CMSampleBuffer,
+        from connection: AVCaptureConnection
+    ) {
+
+        guard let delegate = self.delegate else{ return }
+
+        // Returns the earliest presentation timestamp of all the samples in a CMSampleBuffer
+        let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
+
+        // Throttle capture rate based on assigned fps
+        let elapsedTime = timestamp - lastTimestamp
+        if elapsedTime >= CMTimeMake(value: 1, timescale: Int32(fps)) {
+            // update timestamp
+            lastTimestamp = timestamp
+            // get sample buffer's CVImageBuffer
+            let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
+            // pass onto the assigned delegate
+            delegate.onFrameCaptured(videoCapture: self,
+                                     pixelBuffer:imageBuffer,
+                                     timestamp: timestamp)
+        }
+    }
+
+    /**
+     Called when a frame is dropped
      */
-    public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+    public func captureOutput(
+        _ output: AVCaptureOutput,
+        didDrop sampleBuffer: CMSampleBuffer,
+        from connection: AVCaptureConnection
+    ) {
+        // Ignore
     }
 }

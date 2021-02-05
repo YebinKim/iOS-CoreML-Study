@@ -16,6 +16,7 @@
 		C2925FD525CDC54B0042D354 /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FD425CDC54B0042D354 /* CIImage+Extension.swift */; };
 		C2925FD825CDC5910042D354 /* CaptureVideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FD725CDC5910042D354 /* CaptureVideoPreviewView.swift */; };
 		C2925FE825CDC7FB0042D354 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FE725CDC7FB0042D354 /* VideoCapture.swift */; };
+		C2925FFE25CDDABD0042D354 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2925FFD25CDDABD0042D354 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C2925FD425CDC54B0042D354 /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
 		C2925FD725CDC5910042D354 /* CaptureVideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureVideoPreviewView.swift; sourceTree = "<group>"; };
 		C2925FE725CDC7FB0042D354 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		C2925FFD25CDDABD0042D354 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C2925FBF25CDAFEE0042D354 /* SceneDelegate.swift */,
 				C2925FC125CDAFEE0042D354 /* ViewController.swift */,
 				C2925FC325CDAFEE0042D354 /* Main.storyboard */,
+				C292600025CDDBE50042D354 /* ML Model */,
 				C2925FEE25CDCD100042D354 /* Views */,
 				C2925FEF25CDCE7B0042D354 /* Utils */,
 				C2925FED25CDCC050042D354 /* Extensions */,
@@ -106,6 +109,14 @@
 				C2925FCB25CDAFEF0042D354 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C292600025CDDBE50042D354 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2925FFD25CDDABD0042D354 /* Inceptionv3.mlmodel */,
+			);
+			path = "ML Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				C2925FBE25CDAFEE0042D354 /* AppDelegate.swift in Sources */,
 				C2925FD825CDC5910042D354 /* CaptureVideoPreviewView.swift in Sources */,
 				C2925FC025CDAFEE0042D354 /* SceneDelegate.swift in Sources */,
+				C2925FFE25CDDABD0042D354 /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

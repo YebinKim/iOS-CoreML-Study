@@ -16,6 +16,10 @@ class ViewController: UIViewController {
 
     let videoCapture: VideoCapture = VideoCapture()
 
+    // Used for rendering image processing results and performing image analysis. Here we use
+    // it for rendering out scaled and cropped captured frames in preparation for our model.
+    let context = CIContext()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
