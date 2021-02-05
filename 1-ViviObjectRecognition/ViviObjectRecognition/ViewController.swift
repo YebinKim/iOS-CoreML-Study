@@ -14,10 +14,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var previewView: CapturePreviewView!
     @IBOutlet weak var classifiedLabel: UILabel!
 
+    let videoCapture: VideoCapture = VideoCapture()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
 
+        self.videoCapture.delegate = self
+
+        if self.videoCapture.initCamera(),
+           let previewViewLayer = self.previewView.layer as? AVCaptureVideoPreviewLayer {
+
+            previewViewLayer.session = self.videoCapture.captureSession
+            previewViewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+
+            self.videoCapture.asyncStartCapturing()
+        } else {
+            fatalError("Failed to init VideoCapture")
+        }
     }
 }
 
