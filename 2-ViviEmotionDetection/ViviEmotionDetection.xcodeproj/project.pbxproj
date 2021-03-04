@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2925FBE25CDAFEE0042D354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FBD25CDAFEE0042D354 /* AppDelegate.swift */; };
+		C2925FC025CDAFEE0042D354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FBF25CDAFEE0042D354 /* SceneDelegate.swift */; };
+		C2925FC225CDAFEE0042D354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FC125CDAFEE0042D354 /* ViewController.swift */; };
+		C2925FC525CDAFEE0042D354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2925FC325CDAFEE0042D354 /* Main.storyboard */; };
+		C2925FC725CDAFEF0042D354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2925FC625CDAFEF0042D354 /* Assets.xcassets */; };
+		C2925FCA25CDAFEF0042D354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2925FC825CDAFEF0042D354 /* LaunchScreen.storyboard */; };
+		C2925FD525CDC54B0042D354 /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FD425CDC54B0042D354 /* CIImage+Extension.swift */; };
+		C2925FD825CDC5910042D354 /* CaptureVideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FD725CDC5910042D354 /* CaptureVideoPreviewView.swift */; };
+		C2925FDC25CDC75A0042D354 /* EmotionVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FDB25CDC75A0042D354 /* EmotionVisualizerView.swift */; };
+		C2925FE125CDC7990042D354 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FE025CDC7990042D354 /* UIDevice+Extension.swift */; };
+		C2925FE425CDC7C40042D354 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FE325CDC7C40042D354 /* UIColor+Extension.swift */; };
+		C2925FE825CDC7FB0042D354 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2925FE725CDC7FB0042D354 /* VideoCapture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2925FBA25CDAFEE0042D354 /* ViviEmotionDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViviEmotionDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2925FBD25CDAFEE0042D354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2925FBF25CDAFEE0042D354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C2925FC125CDAFEE0042D354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2925FC425CDAFEE0042D354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2925FC625CDAFEF0042D354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2925FC925CDAFEF0042D354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2925FCB25CDAFEF0042D354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2925FD425CDC54B0042D354 /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
+		C2925FD725CDC5910042D354 /* CaptureVideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureVideoPreviewView.swift; sourceTree = "<group>"; };
+		C2925FDB25CDC75A0042D354 /* EmotionVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionVisualizerView.swift; sourceTree = "<group>"; };
+		C2925FE025CDC7990042D354 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		C2925FE325CDC7C40042D354 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C2925FE725CDC7FB0042D354 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2925FB725CDAFEE0042D354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2925FB125CDAFEE0042D354 = {
+			isa = PBXGroup;
+			children = (
+				C2925FBC25CDAFEE0042D354 /* ViviEmotionDetection */,
+				C2925FBB25CDAFEE0042D354 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2925FBB25CDAFEE0042D354 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2925FBA25CDAFEE0042D354 /* ViviEmotionDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2925FBC25CDAFEE0042D354 /* ViviEmotionDetection */ = {
+			isa = PBXGroup;
+			children = (
+				C2925FBD25CDAFEE0042D354 /* AppDelegate.swift */,
+				C2925FBF25CDAFEE0042D354 /* SceneDelegate.swift */,
+				C2925FC125CDAFEE0042D354 /* ViewController.swift */,
+				C2925FC325CDAFEE0042D354 /* Main.storyboard */,
+				C2925FEE25CDCD100042D354 /* Views */,
+				C2925FEF25CDCE7B0042D354 /* Utils */,
+				C2925FED25CDCC050042D354 /* Extensions */,
+				C2925FF225CDCF120042D354 /* Supporting Files */,
+				C2925FC625CDAFEF0042D354 /* Assets.xcassets */,
+			);
+			path = ViviEmotionDetection;
+			sourceTree = "<group>";
+		};
+		C2925FED25CDCC050042D354 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2925FE025CDC7990042D354 /* UIDevice+Extension.swift */,
+				C2925FE325CDC7C40042D354 /* UIColor+Extension.swift */,
+				C2925FD425CDC54B0042D354 /* CIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C2925FEE25CDCD100042D354 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2925FDB25CDC75A0042D354 /* EmotionVisualizerView.swift */,
+				C2925FD725CDC5910042D354 /* CaptureVideoPreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2925FEF25CDCE7B0042D354 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C2925FE725CDC7FB0042D354 /* VideoCapture.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C2925FF225CDCF120042D354 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2925FC825CDAFEF0042D354 /* LaunchScreen.storyboard */,
+				C2925FCB25CDAFEF0042D354 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2925FB925CDAFEE0042D354 /* ViviEmotionDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2925FCE25CDAFEF0042D354 /* Build configuration list for PBXNativeTarget "ViviEmotionDetection" */;
+			buildPhases = (
+				C2925FB625CDAFEE0042D354 /* Sources */,
+				C2925FB725CDAFEE0042D354 /* Frameworks */,
+				C2925FB825CDAFEE0042D354 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViviEmotionDetection;
+			productName = ViviObjectRecognition;
+			productReference = C2925FBA25CDAFEE0042D354 /* ViviEmotionDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2925FB225CDAFEE0042D354 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					C2925FB925CDAFEE0042D354 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = C2925FB525CDAFEE0042D354 /* Build configuration list for PBXProject "ViviEmotionDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2925FB125CDAFEE0042D354;
+			productRefGroup = C2925FBB25CDAFEE0042D354 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2925FB925CDAFEE0042D354 /* ViviEmotionDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2925FB825CDAFEE0042D354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2925FCA25CDAFEF0042D354 /* LaunchScreen.storyboard in Resources */,
+				C2925FC725CDAFEF0042D354 /* Assets.xcassets in Resources */,
+				C2925FC525CDAFEE0042D354 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2925FB625CDAFEE0042D354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2925FDC25CDC75A0042D354 /* EmotionVisualizerView.swift in Sources */,
+				C2925FE125CDC7990042D354 /* UIDevice+Extension.swift in Sources */,
+				C2925FC225CDAFEE0042D354 /* ViewController.swift in Sources */,
+				C2925FD525CDC54B0042D354 /* CIImage+Extension.swift in Sources */,
+				C2925FE825CDC7FB0042D354 /* VideoCapture.swift in Sources */,
+				C2925FBE25CDAFEE0042D354 /* AppDelegate.swift in Sources */,
+				C2925FD825CDC5910042D354 /* CaptureVideoPreviewView.swift in Sources */,
+				C2925FC025CDAFEE0042D354 /* SceneDelegate.swift in Sources */,
+				C2925FE425CDC7C40042D354 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2925FC325CDAFEE0042D354 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2925FC425CDAFEE0042D354 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2925FC825CDAFEF0042D354 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2925FC925CDAFEF0042D354 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2925FCC25CDAFEF0042D354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2925FCD25CDAFEF0042D354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2925FCF25CDAFEF0042D354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5RZ7AYRC2;
+				INFOPLIST_FILE = "ViviEmotionDetection/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = developer.VIVI.ViviEmotionDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2925FD025CDAFEF0042D354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5RZ7AYRC2;
+				INFOPLIST_FILE = "ViviEmotionDetection/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = developer.VIVI.ViviEmotionDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2925FB525CDAFEE0042D354 /* Build configuration list for PBXProject "ViviEmotionDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2925FCC25CDAFEF0042D354 /* Debug */,
+				C2925FCD25CDAFEF0042D354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2925FCE25CDAFEF0042D354 /* Build configuration list for PBXNativeTarget "ViviEmotionDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2925FCF25CDAFEF0042D354 /* Debug */,
+				C2925FD025CDAFEF0042D354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2925FB225CDAFEE0042D354 /* Project object */;
+}
